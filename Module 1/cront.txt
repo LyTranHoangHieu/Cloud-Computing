@@ -1,0 +1,5 @@
+apt install cron
+systemctl enable cron
+crontab -e
+0 3 * * * /var/backups/backup-source-sql.sh >/dev/null 2>&1
+service cron restart

@@ -1,0 +1,20 @@
+# step 1. create IAM user with AmazonS3FullAccess permission
+
+# step 2. install AWS CLI
+cd /var/www 
+curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip
+apt install unzip zip
+unzip awscliv2.zip
+sudo ./aws/install
+
+# step 3. configure AWS CLI
+aws configure
+# enter access key ID from iam user that you create in step 1
+# enter secret access key from iam user that you create in step 1
+# ap-southeast-1 (region: Singapore)
+# json
+
+# upload 1 file from ec2 to s3
+# aws s3 cp <file's direction> s3://<bucketname>
+# example
+# aws s3 cp /var/www/wordpress/readme.html s3://hieulth-bucket
