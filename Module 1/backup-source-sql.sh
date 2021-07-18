@@ -1,9 +1,9 @@
-db_name='wordpress'
-db_user='admin'
-db_passwd='12345678'
-host='hieulth-db.covgl4b4wzie.ap-southeast-1.rds.amazonaws.com'
+db_name='database name here'
+db_user='database user name here'
+db_passwd='database password here'
+host='database host'
 output='/var/backups'
-bucket_name='hieulth-bucket'
+bucket_name='bucket name here'
 underscore='_'
 date=`date +%d-%m-%Y`
 datedel=`date --date="1 days ago" +%d-%m-%Y`
