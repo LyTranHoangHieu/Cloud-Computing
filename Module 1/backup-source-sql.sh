@@ -1,7 +1,7 @@
 db_name='database name here'
 db_user='database user name here'
 db_passwd='database password here'
-host='database host'
+host='database host here'
 output='/var/backups'
 bucket_name='bucket name here'
 underscore='_'
