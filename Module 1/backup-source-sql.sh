@@ -8,10 +8,6 @@ underscore='_'
 date=`date +%d-%m-%Y`
 datedel=`date --date="1 days ago" +%d-%m-%Y`
 
-rm -f $output/apt* > /dev/null 2>&1
-rm -f $output/dpkg* > /dev/null 2>&1
-rm -f $output/alter* > /dev/null 2>&1
-
 rm -f $output/*.sql > /dev/null 2>&1
 rm -f $output/*.zip > /dev/null 2>&1
 
@@ -24,3 +20,7 @@ sudo aws s3 cp $output/source$underscore$date.zip s3://$bucket_name
 
 sudo aws s3 rm s3://$bucket_name/$db_name$underscore$datedel.zip
 sudo aws s3 rm s3://$bucket_name/source$underscore$datedel.zip
+
+rm -f $output/apt* > /dev/null 2>&1
+rm -f $output/dpkg* > /dev/null 2>&1
+rm -f $output/alter* > /dev/null 2>&1
