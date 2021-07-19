@@ -1,0 +1,4 @@
+# seen Time Zone
+timedatectl | grep 'Time zone'
+# set Time Zone
+timedatectl set-timezone Asia/Ho_Chi_Minh
